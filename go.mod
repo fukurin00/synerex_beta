@@ -2,9 +2,13 @@ module github.com/synerex/synerex_beta
 
 go 1.13
 
+replace local.packages/synerex_proto => ./proto
+
+replace local.packages/proto_test => ./proto/proto_test
+
 require (
 	github.com/go-spatial/proj v0.2.0 // indirect
-	github.com/golang/protobuf v1.3.2
+	github.com/golang/protobuf v1.4.1
 	github.com/paulmach/go.geojson v1.4.0 // indirect
 	github.com/rcrowley/go-metrics v0.0.0-20190826022208-cac0b30c2563 // indirect
 	github.com/stretchr/testify v1.4.0 // indirect
@@ -17,5 +21,7 @@ require (
 	github.com/synerex/synerex_proto v0.1.6
 	github.com/synerex/synerex_sxutil v0.4.6
 	github.com/x-cray/logrus-prefixed-formatter v0.5.2 // indirect
-	google.golang.org/grpc v1.26.0
+	google.golang.org/grpc v1.27.0
+	local.packages/proto_test v0.0.0-00010101000000-000000000000 // indirect
+	local.packages/synerex_proto v0.0.0-00010101000000-000000000000 // indirect
 )
